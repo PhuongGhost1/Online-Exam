@@ -1,72 +1,4 @@
 
-.img-header img{
-    width: 400px;
-    height: 140px;
-    padding-top: 90px;
-    padding-left: 10px;
-    margin-bottom: 5%;
-}
-
-.header{
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
-    border: 1px solid rgba(0,0,0,.125);
-    border-top-width: 1px;
-    border-right-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-top-style: solid;
-    border-right-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-top-color: rgba(0, 0, 0, 0.125);
-    border-right-color: rgba(0, 0, 0, 0.125);
-    border-bottom-color: rgba(0, 0, 0, 0.125);
-    border-left-color: rgba(0, 0, 0, 0.125);
-    box-sizing: border-box;
-}
-
-.header-content{
-    padding: 70px; 
-    border: 1px solid black; 
-    border-radius: 10px;
-}
-
-.User{
-    width: 270px;
-    height: 35px;
-    margin-bottom: 20px;
-    margin-right: 100px;
-}
-
-.Pass{
-    width: 270px;
-    height: 35px;
-    margin-bottom: 1px;
-    margin-right: 100px;
-}
-
-.type-ofb{
-    margin-right: 210px;
-}
-
-.type-button{
-    width: 0px;
-    height: 13px;
-    margin-bottom: 20px;
-}
-
-.type-submit{
-    width: 270px;
-    height: 35px;
-    background-color: #0066CC;
-    color: white;
-    margin-right: 100px;
-}
-
 .ch1{
     margin-right: 290px;
 }
@@ -191,3 +123,463 @@ section{
     margin-top: -560px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr {
+    border: 1px solid #ddd;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.buton{
+    position: relative;
+    bottom: 80px;
+    left: -100px;
+}
+
+.textHeading{
+    position: relative;
+    bottom: 120px;
+    left: 280px;
+    font-size: 40px;
+}
+
+.inputSubject {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    left: -130px;
+    bottom: 60px;
+}
+
+.inputSubject table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputSubject table th,
+.inputSubject table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.inputSubject label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputSubject input[type="text"],
+.inputSubject select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.inputSubject input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.inputSubject input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.inputSubject input[type="submit"]:hover {
+    background-color: #ff0000;
+}
+
+.notification {
+    margin-top: -25px;
+    margin-left: 200px;
+    font-style: italic;
+}
+
+.addStuddent{
+    position: relative;
+    left: 600px;
+    bottom: 680px;
+    width: 50%;
+}
+
+.create{
+    position: relative;
+    left: 800px;
+}
+
+.exam{
+    position: relative;
+    top: 30px;
+    left: 60px;
+}
+
+.saveAdd{
+    position: relative;
+    left: 400px;
+}
+
+.labeltext{
+    position: relative;
+    right: 100px;
+}
+
+.labelTy{
+    position: relative;
+    top: 60px;
+}
+
+.labeltext1{
+    position: relative;
+    left: 90px;
+}
+
+.searchStu{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.typeInput{
+    position: relative;
+    left: 190px;
+    height: 30px;
+    width: 200px;
+}
+
+.tableStu{
+    position: relative;
+    top: 120px;
+}
+
+.titleHead{
+    position: relative;
+    top: 30px;
+}
+
+.viewResult{
+    position: relative;
+    top: 50px;
+    left: 90px;
+}
+
+.typeInput1{
+    height: 30px;
+    width: 200px;
+    position: relative;
+    left: 200px;
+}
+
+.viewResult2{
+    position: relative;
+    top: 80px;
+    left: 80px;
+}
+
+.avaQuestion{
+    position: relative;
+    left: 10px;
+}
+
+.questionTotal{
+    position: relative;
+    left: 200px;
+}
+
+.createQuestion{
+    position: relative;
+    left: 400px;
+}
+
+.questionBank{
+    position: relative;
+    top: 50px;
+    left: 60px;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    height: 500px;
+    width: 100%;
+}
+
+.questionBank td{
+    text-align: center;
+}
+
+.questionBank tr{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.descri{
+    width: 200px;
+    height: 60px;
+}
+
+.inputPaper {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    position: relative;
+    left: 110px;
+    bottom: 60px;
+}
+
+.inputPaper table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.inputPaper table th,
+.inputPaper table td {
+    padding: 8px;
+    text-align: left;
+}
+
+.inputPaper label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.inputPaper input[type="text"],
+.inputPaper select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.saveInput{
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    top: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+.saveInput:hover{
+    background: #ff3333;
+    color: #f2f2f2;
+}
+
+.deleteButton {
+    background-color: #ff3333; 
+    color: white; 
+    border: none; 
+    border-radius: 1px; 
+    padding: 8px; 
+    position: absolute;
+    top: 5px; 
+    right: 2px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.deleteButton:hover{
+    background: #ff6666;
+    color: #000000;
+}
+
+.addQuessDo{
+    width: 100%;
+    border-collapse: separate;
+    margin: auto;
+    border-spacing: 0 25px;
+}
+
+.addQuessDo th{
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    margin-top: 30px;
+    text-align: center;
+    height: 60px;
+    width: 50px;
+}
+
+.addQuessDo tr{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 36px;
+    padding-bottom: 30px;
+}
+
+.button1{
+    position: relative;
+    left: -60px;
+}
+
+.title1{
+    position: relative;
+    margin-left: 300px;
+    bottom: 15px;
+}
+
+.addQuesSub{
+    position: relative;
+    margin-left: 700px;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    bottom: 40px;
+    background-color: #ccffff;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.addQuesSub:hover{
+    background-color: #99ff99;
+}
+
+.addQues{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    transition: background-color 0.3s, color 0.3s;
+    left: 250px;
+    bottom: 20px;
+}
+
+.addQues:hover{
+    background: #33ffff;
+    color: #000000;
+}
+
+.deteQues {
+    max-width: 500px;
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 0 10px; 
+    position: relative;
+    left: 100px;
+}
+
+.deteQues th, .deteQues td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.deteQues td {
+    margin-bottom: 10px;
+}
+
+.deteQues input.dete1 {
+    margin-top: 10px; 
+}
+
+.dete1{
+    background-color: #ffcc99;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dete1:hover{
+    background-color: #ff0000;
+}
+
+.button2{
+    position: relative;
+    bottom: 60px;
+    left: -60px;
+}
+
+.createQues{
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+}
+
+.createQues th, .createQues td{
+    text-align: center;
+}
+
+.saveQues{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    left: 210px;
+    bottom: 30px;
+    margin-left: 20px;
+}
+
+.changeT1{
+    background-color: #99ff99;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.changeT1:hover{
+    background-color: #ff0000;
+}
+
+.changeT2{
+    background-color: #ff3333;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.changeT2:hover{
+    background-color: #00ff00;
+}
+
+.checkbox-container {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.custom-checkbox{
+    border: 1px solid #000;
+    position: absolute;
+}
+
+.checkbox-container input:checked + .custom-checkbox {
+    background-color: #ff0000;
+    color: #f2f2f2;
+}
+
+.checkbox-container input[type="checkbox"] {
+    width: 15px; 
+    height: 15px; 
+}
+
+.checkbox-container label {
+    margin-left: 5px; 
+}

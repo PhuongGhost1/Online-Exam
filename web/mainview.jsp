@@ -3,8 +3,8 @@
 <%@include file="/view/lecturer/rightHead.jsp" %>
 
 <section>
-    <p>fassssssssssssssa</p>
-</section>    
+    <h2>Welcome To Online Examination system</h2>
+</section>
 
 <%@include file="/view/lecturer/footer.jsp" %>
 

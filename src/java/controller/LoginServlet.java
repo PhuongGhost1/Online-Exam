@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("index.jsp").forward(request, response);
+        request.getRequestDispatcher("firstBegin.jsp").forward(request, response);
     }
 
     @Override
@@ -36,25 +36,12 @@ public class LoginServlet extends HttpServlet {
             throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-        HttpSession hs = request.getSession();
-        RequestDispatcher dispatcher = null;
         
-        try{
-            Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/list","root","maimotnguoi123");
-            PreparedStatement ps = con.prepareStatement("select * from list.student where id = ? and password = ?");
-            ps.setString(1, username);
-            ps.setString(2, password);
-            
-            ResultSet rs = ps.executeQuery();
-            if(rs.next()){
-                dispatcher = request.getRequestDispatcher("inside.jsp");
-            }else{
-                dispatcher = request.getRequestDispatcher("index.jsp");
-            }
-            dispatcher.forward(request, response);
-        }catch(Exception e){
-            e.printStackTrace();
+        if("Phuong".equals(username) && "abcd".equals(password)){
+            request.getRequestDispatcher("mainview.jsp").forward(request, response);
+        }else{
+            request.setAttribute("errorMessage", "Invalid username or password");
+            request.getRequestDispatcher("firstBegin.jsp").forward(request, response);
         }
     }
 }

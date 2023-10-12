@@ -1,5 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>HeadToChoose</servlet-name>
+        <servlet-class>controller.HeadToChoose</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>HeadToAddQuestion</servlet-name>
+        <servlet-class>controller.HeadToAddQuestion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddQuestion</servlet-name>
+        <servlet-class>controller.AddQuestion</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateQuestion</servlet-name>
+        <servlet-class>controller.CreateQuestion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HeadToChoose</servlet-name>
+        <url-pattern>/HeadToChoose</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>HeadToAddQuestion</servlet-name>
+        <url-pattern>/HeadToAddQuestion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AddQuestion</servlet-name>
+        <url-pattern>/AddQuestion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CreateQuestion</servlet-name>
+        <url-pattern>/CreateQuestion</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30

@@ -6,7 +6,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>FPT University</title>
-        <link rel="stylesheet" type="text/css" href="CSS/styleforindex.css">
+        <style> <%@include file="/CSS/styleforindex.css" %> </</style>
     </head>
 <% request.setCharacterEncoding("UTF-8"); %>
 <body>
