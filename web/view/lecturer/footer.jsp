@@ -2,6 +2,7 @@
         <p>&copy; Copyright FPT University. 
             All rights reserved.</p>
     </footer>
-<script src="javascript/script.js"></script>
+<script> <%@include file="/javascript/forImage.js" %></script>
+<script> <%@include file="/javascript/deImage.js" %></script>
 </body>
 </html>

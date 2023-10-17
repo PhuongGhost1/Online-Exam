@@ -45,7 +45,7 @@
                                             %>
                                             <div class="row justify-content-md-center">
                                                 <div class="col-md-5">
-                                                    <form class="mt-3" action="LoginServlet" method="post" id="login">
+                                                    <form class="mt-3" action="LoginLecServlet" method="post" id="login">
                                                         <input id="anchor" type="hidden" name="anchor" value="">
                                                         <input type="hidden" name="logintoken" value="kZNtMvxLy8Hm4nA0GWUO3MDJ5tsbu9w8">
                                                         <div class="form-group">
