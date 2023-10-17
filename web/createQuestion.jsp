@@ -1,10 +1,9 @@
-
 <%@include file="/view/lecturer/header.jsp" %>
 <%@include file="/view/lecturer/rightHead.jsp" %>
 
 <section>
     <button class="button2" onclick="javascript:history.go(-1)" ><< Back to question bank</button>  
-    <form action="CreateQuestion" method="get">
+    <form action="CreateQuestion" method="get" >
         <table class="createQues">
             
             <tr>
@@ -33,7 +32,9 @@
             <tr>
                 <th>Difficulty</th>
                 <td>
-                    Medium
+                    <input type="radio" value="forPractice">Easy
+                    <input type="radio" value="forExam">Medium
+                    <input type="radio" value="forPractice">Hard
                 </td>
             </tr>
             <tr>
@@ -46,7 +47,8 @@
             <tr>
                 <th>Attachment</th>
                 <td>
-                    <img src="images/teacher.png" alt="Logo teacher"/>
+                    <input type="file" id="image" name="image" accept="image/*" onchange="previewImage(event)">
+                    <div id="imagePreview"></div>
                 </td>
             </tr>
             <tr>

@@ -16,6 +16,14 @@
         <servlet-name>CreateQuestion</servlet-name>
         <servlet-class>controller.CreateQuestion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>CheckLoginServlet</servlet-name>
+        <servlet-class>controller.CheckLoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginLecServlet</servlet-name>
+        <servlet-class>controller.LoginLecServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HeadToChoose</servlet-name>
         <url-pattern>/HeadToChoose</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>CreateQuestion</servlet-name>
         <url-pattern>/CreateQuestion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckLoginServlet</servlet-name>
+        <url-pattern>/CheckLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginLecServlet</servlet-name>
+        <url-pattern>/LoginLecServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

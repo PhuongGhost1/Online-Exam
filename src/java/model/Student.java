@@ -4,80 +4,58 @@
  */
 package model;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Asus
  */
-public class Student {
-    private String id;
-    private String name;
-    private String email;
-    private String birth;
-    private char gender;
-    private String password;
-
-    public Student(String id, String name, String email, String birth, char gender, String password) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-        this.birth = birth;
-        this.gender = gender;
-        this.password = password;
-    }
+public class Student extends Person{
+    private String group;
+    private ArrayList<Student> student;
+    private ArrayList<StudentExam> studentExam;
+    private ArrayList<StudentSubject> studentSubject; 
 
     public Student() {
     }
 
-    public String getId() {
-        return id;
+    public Student(String id, String fullname, String email, String password, String group, ArrayList<Student> student, ArrayList<StudentExam> studentExam, ArrayList<StudentSubject> studentSubject) {
+        super(id, fullname, email, password);
+        this.group = group;
+        this.student = student;
+        this.studentExam = studentExam;
+        this.studentSubject = studentSubject;
+    } 
+
+    public String getGroup() {
+        return group;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setGroup(String group) {
+        this.group = group;
     }
 
-    public String getName() {
-        return name;
+    public ArrayList<Student> getStudent() {
+        return student;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStudent(ArrayList<Student> student) {
+        this.student = student;
     }
 
-    public String getEmail() {
-        return email;
+    public ArrayList<StudentExam> getStudentExam() {
+        return studentExam;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setStudentExam(ArrayList<StudentExam> studentExam) {
+        this.studentExam = studentExam;
     }
 
-    public String getBirth() {
-        return birth;
+    public ArrayList<StudentSubject> getStudentSubject() {
+        return studentSubject;
     }
 
-    public void setBirth(String birth) {
-        this.birth = birth;
-    }
-
-    public char getGender() {
-        return gender;
-    }
-
-    public void setGender(char gender) {
-        this.gender = gender;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" + "id=" + id + ", name=" + name + ", email=" + email + ", birth=" + birth + ", gender=" + gender + ", password=" + password + '}';
+    public void setStudentSubject(ArrayList<StudentSubject> studentSubject) {
+        this.studentSubject = studentSubject;
     }
 }
